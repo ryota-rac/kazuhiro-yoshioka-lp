@@ -252,12 +252,12 @@ achievement-grid,
     font-size: 1.2rem;
   }
 
-  /* Hero画像: スマホでも画像全体が見やすいように調整 */
+  /* Hero画像: スマホでも自然に見えるようcoverに戻し、position調整 */
   .hero {
-    min-height: 55vh;
-    background-size: contain;
+    min-height: 70vh;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center;
   }
 
   .hero-name {
