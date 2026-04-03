@@ -238,7 +238,7 @@ achievement-grid,
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .page-wrapper {
     width: 96vw;
   }
