@@ -294,11 +294,10 @@ achievement-grid,
 
 @media (max-width: 768px) and (orientation: portrait) {
   .hero {
-    aspect-ratio: 2 / 1; /* 画像アスペクト比に合わせる */
-    min-height: auto; /* 固定高さを外す */
-    height: auto; /* 画像サイズに合わせる */
-    background-size: contain; /* 写真全体が見えるように */
-    background-position: center; /* 中央に */
+    min-height: clamp(35vh, 60vw, 50vh); /* 画面サイズに応じて自然な高さに */
+    height: auto; /* 固定高さを外す */
+    background-size: contain; /* 写真全体が見える */
+    background-position: center;
     background-repeat: no-repeat;
   }
 
