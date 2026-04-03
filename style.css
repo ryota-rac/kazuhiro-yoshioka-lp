@@ -291,3 +291,18 @@ achievement-grid,
     max-height: 70px;
   }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .hero {
+    min-height: 50vh; /* 縦持ちで高さを詰める */
+    background-position: 50% 10%; /* さらに上寄りに調整 */
+  }
+
+  .hero-name {
+    font-size: clamp(1.4rem, 7vw, 2.2rem); /* テキストを小さく */
+  }
+
+  .hero-location {
+    font-size: clamp(0.75rem, 3vw, 0.95rem); /* テキストを小さく */
+  }
+}
