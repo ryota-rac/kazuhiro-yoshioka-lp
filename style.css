@@ -294,15 +294,23 @@ achievement-grid,
 
 @media (max-width: 768px) and (orientation: portrait) {
   .hero {
-    min-height: 50vh; /* 縦持ちで高さを詰める */
-    background-position: 50% 10%; /* さらに上寄りに調整 */
+    aspect-ratio: 2 / 1; /* 画像アスペクト比に合わせる */
+    min-height: auto; /* 固定高さを外す */
+    height: auto; /* 画像サイズに合わせる */
+    background-size: contain; /* 写真全体が見えるように */
+    background-position: center; /* 中央に */
+    background-repeat: no-repeat;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.44) 0%, transparent 100%); /* 上のグレー余白を消す */
   }
 
   .hero-name {
-    font-size: clamp(1.4rem, 7vw, 2.2rem); /* テキストを小さく */
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
   }
 
   .hero-location {
-    font-size: clamp(0.75rem, 3vw, 0.95rem); /* テキストを小さく */
+    font-size: clamp(0.75rem, 3vw, 0.95rem);
   }
 }
