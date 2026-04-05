@@ -295,6 +295,10 @@ achievement-grid,
     padding: 50px 0;
   }
 
+  .section-news {
+    padding-top: 0;
+  }
+
   .profile-text .profile-item,
   .achievement-text ul {
     font-size: 0.95rem;
