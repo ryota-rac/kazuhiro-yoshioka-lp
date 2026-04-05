@@ -46,6 +46,7 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-bottom: 0;
 }
 
 .hero-overlay {
@@ -143,6 +144,23 @@ achievement-grid,
 .achievement-text li {
   margin-bottom: 0.8rem;
   line-height: 1.5;
+  word-break: keep-all;
+}
+
+.achievement-year h3 {
+  margin: 20px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.achievement-year ul {
+  margin: 0 0 20px;
+  padding: 0 0 0 1.2rem;
+}
+
+.achievement-year li {
+  word-break: keep-all;
 }
 
 .logo-grid {
@@ -258,6 +276,7 @@ achievement-grid,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 20%; /* 上寄りに調整 */
+    padding-bottom: 0;
   }
 
   .hero-content {
